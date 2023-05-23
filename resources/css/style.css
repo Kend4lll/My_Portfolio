@@ -1,0 +1,95 @@
+/* Universal Style */
+html {
+    font-family: "Roboto", sans-serif;
+  }
+
+main, footer {
+    position: relative;
+    top: 5.3125rem; /* To offset for fixed header. */
+  } 
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.75rem;
+    
+}
+
+h3{
+    font-size: 1.5;
+}
+
+/* Header Style */
+header {
+   position: fixed;
+   width: 100%;
+   border-bottom: solid 1px #c6c1c1;
+   background-color: aqua;
+   height: 5.3125rem;
+   z-index: 100;
+}
+
+header .content{
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+}
+
+header .author{
+    flex: 1;
+    font-size: 1.5rem;
+}
+
+header nav ul{
+    display: flex;
+}
+
+nav li {
+    padding-left: 3.5rem;
+}
+
+nav a {
+    vertical-align: bottom;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4a4a4a;
+}
+
+/* Main About Me*/
+.about-me-container{
+    display: flex;
+}
+
+.about-me-text-container{
+    margin: 2rem;
+    line-height: 1.25rem;
+    letter-spacing: .025rem;
+}
+
+.portriat{
+    width: 300px;
+    margin-right: 150px;
+}
+
+/* Projects */
+#projects{
+    margin: 2rem;
+    line-height: 1.25rem;
+    letter-spacing: .025rem;
+}
+
+/* Skills */
+#skills{
+    margin: 2rem;
+    line-height: 1.25rem;
+    letter-spacing: .025rem;
+}
+
+/* contact */
+#contact{
+    margin: 2rem;
+    line-height: 1.25rem;
+    letter-spacing: .025rem;
+}
