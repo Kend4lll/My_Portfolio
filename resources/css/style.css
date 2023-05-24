@@ -19,6 +19,7 @@ h2{
 
 h3{
     font-size: 1.5;
+    font-weight: bold;
 }
 
 /* Header Style */
@@ -87,9 +88,43 @@ nav a {
     letter-spacing: .025rem;
 }
 
+.skills-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    /* width: 2em; */
+}
+
 /* contact */
 #contact{
     margin: 2rem;
     line-height: 1.25rem;
     letter-spacing: .025rem;
+}
+
+.contact-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* font-size: 30; */
+}
+
+
+footer ul{
+    display: flex;
+}
+
+footer li {
+    padding-left: 3.5rem;
+    
+}
+
+footer a {
+    vertical-align: bottom;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4a4a4a;
 }
