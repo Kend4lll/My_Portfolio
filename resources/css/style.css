@@ -1,11 +1,13 @@
 /* Universal Style */
 html {
     font-family: "Roboto", sans-serif;
+    scroll-padding-top: 4rem;
   }
 
-main, footer {
+main {
     position: relative;
-    top: 5.3125rem; /* To offset for fixed header. */
+    /* To offset for fixed header. */
+    top: 5.3125rem; 
   } 
 
 h1{
@@ -18,29 +20,33 @@ h2{
 }
 
 h3{
-    font-size: 1.5;
+    font-size: 1.5rem;
     font-weight: bold;
 }
+
 
 /* Header Style */
 header {
    position: fixed;
    width: 100%;
    border-bottom: solid 1px #c6c1c1;
-   background-color: aqua;
-   height: 5.3125rem;
+   background-color: rgb(0, 0, 0);
+   height: 4rem;
    z-index: 100;
 }
 
 header .content{
     display: flex;
     align-items: center;
-    padding: 1.875rem;
+    justify-content: space-evenly;
+    padding: 1rem;
 }
 
 header .author{
-    flex: 1;
+    /* flex: 1; */
     font-size: 1.5rem;
+    color: whitesmoke;
+    padding-left: 3.5rem;
 }
 
 header nav ul{
@@ -49,13 +55,26 @@ header nav ul{
 
 nav li {
     padding-left: 3.5rem;
+    padding-right: 3.5rem;
 }
 
 nav a {
     vertical-align: bottom;
     line-height: 1.6;
     font-size: 1rem;
-    color: #4a4a4a;
+    color: whitesmoke;
+}
+
+.contact-button{
+    background-color: whitesmoke;
+    border-radius: .5rem;
+    padding: .25rem;
+    cursor: pointer;
+}
+
+.contact-button:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
 /* Main About Me*/
@@ -97,6 +116,23 @@ nav a {
     /* width: 2em; */
 }
 
+.skills-box{
+    width: 100%;
+    max-width: 5rem;
+    padding: 1rem;
+    height: 100%;
+    background-color: #4a4a4ac2;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-box p{
+    font-size: 1rem;
+}
+
 /* contact */
 #contact{
     margin: 2rem;
@@ -110,6 +146,12 @@ nav a {
     justify-content: space-evenly;
     flex-wrap: wrap;
     /* font-size: 30; */
+}
+
+
+/* footer */
+.footer-content{
+    margin-top: 4rem;
 }
 
 
