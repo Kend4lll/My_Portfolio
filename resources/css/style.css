@@ -82,6 +82,13 @@ nav a {
     display: flex;
 }
 
+.about-me-container img{
+    width: 25%;
+    min-width: 20rem;
+    max-height: 25rem;
+    
+}
+
 .about-me-text-container{
     margin: 2rem;
     line-height: 1.25rem;
@@ -94,10 +101,43 @@ nav a {
 }
 
 /* Projects */
-#projects{
+#my-projects{
     margin: 2rem;
     line-height: 1.25rem;
     letter-spacing: .025rem;
+}
+
+.project-grid-container{
+    margin-top: 1rem;
+    display: grid;
+    width: 100%;
+    gap: 1rem;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 400px));
+    grid-auto-columns: auto;
+    text-align: center;
+    /* height: auto; */
+}
+
+.project-grid-child{
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25rem;
+}
+
+.project-image{
+    width: 100%;
+    height: 7rem;
+}
+
+.project-image img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 100%;
+    max-height: 100%;
 }
 
 /* Skills */
@@ -117,6 +157,7 @@ nav a {
 }
 
 .skills-box{
+    margin: 1rem;
     width: 100%;
     max-width: 5rem;
     padding: 1rem;
@@ -135,6 +176,9 @@ nav a {
 
 /* contact */
 #contact{
+    position: relative;
+    /* To offset for fixed header. */
+    top: 5.3125rem; 
     margin: 2rem;
     line-height: 1.25rem;
     letter-spacing: .025rem;
