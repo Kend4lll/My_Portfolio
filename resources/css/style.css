@@ -1,7 +1,7 @@
 /* Universal Style */
 html {
     font-family: "Roboto", sans-serif;
-    scroll-padding-top: 4rem;
+    scroll-padding-top: 5rem;
   }
 
 main {
@@ -140,7 +140,38 @@ nav a {
     max-height: 100%;
 }
 
+.project-description{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
 
+.project-description p{
+    min-height: 5rem;
+    padding: .25rem;
+    display: flex;
+    align-items: center;
+    height: 8rem;
+ 
+}
+
+.project-btns{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn{
+    margin: .25rem;
+    padding: .25rem;
+    background-color: palevioletred;
+    border-radius: .5rem;
+}
+.fab{
+    font-size: 2rem;
+}
 
 /* Skills */
 #skills{
