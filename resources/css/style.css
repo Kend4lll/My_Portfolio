@@ -90,10 +90,10 @@ nav a {
     nav li{
         padding-left: 0%;
     }
-  }
+}
 
 /* cell phone size */
-@media only screen and (min-width: 600px){
+@media only screen and (max-width: 600px){
     header .author{
       font-size: 1rem;
       
@@ -101,14 +101,36 @@ nav a {
 
     nav li{
         padding-left: 0%;
+        margin-right: -2.75rem;
     }
+
+    #my-projects .project-description p{
+        height: 13rem;
+    }
+
+    header .content{
+        justify-content: space-between;
+    }
+
+    #my-projects .project-grid-child{
+        height: 30rem;
+        align-items: center;
+    }
+
+    #my-projects .project-grid-container, #about .portriat, #skills .skills-container{
+        position: relative;
+        left: 20%;
+    }
+
+    
   }
 
 
 
 /* Main About Me*/
 .about-me-container{
-    display: flex;
+    display: inline-block;
+    min-height: 37rem;
 }
 
 .about-me-container img{
@@ -118,7 +140,7 @@ nav a {
     
 }
 
-.about-me-text-container{
+.about-me-text{
     margin: 2rem;
     line-height: 1.25rem;
     letter-spacing: .025rem;
@@ -127,6 +149,9 @@ nav a {
 .portriat{
     width: 300px;
     margin-right: 150px;
+    float: right;
+    min-height: 24rem;
+    /* max-height: 25rem; */
 }
 
 /* Projects */
