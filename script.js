@@ -1,18 +1,3 @@
-
-
-// const img = document.getElementById('images');
-
-// let toggle = true;
-// img.addEventListener('click', function(){
-//     toggle = !toggle;
-//     if(toggle){
-//         img.src = './resources/images/IMG_0015.jpg';
-//     } else{
-//         img.src = './resources/images/2.jpg'
-//     }
-// });
-
-
 const img = document.getElementById('images');
 let x = 1;
 img.addEventListener('click', function(){
@@ -58,11 +43,4 @@ img.addEventListener('click', function(){
             x = 1;
             break;
     };
-
-    // toggle = !toggle;
-    // if(toggle){
-    //     img.src = './resources/images/IMG_0015.jpg';
-    // } else{
-    //     img.src = './resources/images/2.jpg'
-    // }
 });
